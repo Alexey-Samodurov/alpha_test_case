@@ -1,0 +1,13 @@
+version: '3'
+services:
+  postgres:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: alpha
+      POSTGRES_PASSWORD: alpha
+      POSTGRES_DB: alpha
+#    volumes:
+#      - postgres-db-volume:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+    restart: always
